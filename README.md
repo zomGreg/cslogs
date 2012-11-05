@@ -12,7 +12,6 @@ where api-server.log.2012-10-27 is the api logs from a cloudstack server.
 ## Sample output:
 
 CloudStack API Summary for 2012-10-27
-==========================================
 
 List Volumes:              107399  19.18 %
 List Zones:                177763  31.75 %
@@ -26,7 +25,6 @@ List Accounts:             0        0.00 %
 
 
 Total list calls:          559809 100.00 %
-------------------------------------------
 
 Create Volume:             0        0.00 %
 Create Template:           0        0.00 %
@@ -36,7 +34,6 @@ Start Virtual Machine:     0        0.00 %
 
 
 Total create calls:        1        0.00 %
-------------------------------------------
 
 Destroy Virtual Machine:   0        0.00 %
 Delete Volume:             0        0.00 %
@@ -44,6 +41,5 @@ Delete Template:           0        0.00 %
 
 
 Total delete calls:        0        0.00 %
-==========================================
 
 Total calls:               559810
