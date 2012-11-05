@@ -63,6 +63,8 @@ awk -f keyStats.awk -v key=0Dc-EfRxmi_4YbtK-XZf api-server.log.2012-10-27
 
 where api-server.log.2012-10-27 is the api logs from a cloudstack server.
 
+and 0Dc-EfRxmi_4YbtK-XZf is a part, or all, of an API key. For best results, should be unique.
+
 ## Sample output:
 
 ```
