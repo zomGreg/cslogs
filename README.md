@@ -9,6 +9,11 @@ awk -f stats.awk api-server.log.2012-10-27
 
 where api-server.log.2012-10-27 is the api logs from a cloudstack server.
 
+## Dependencies
+
+* awk
+
+
 ## Sample output:
 
 ```
@@ -48,4 +53,53 @@ Total delete calls:        0        0.00 %
 ------------------------------------------
 
 Total calls:               559810
+```
+
+# Stats by API key (keyStats.awk)
+
+## How to call:
+
+awk -f keyStats.awk -v key=0Dc-EfRxmi_4YbtK-XZf api-server.log.2012-10-27
+
+where api-server.log.2012-10-27 is the api logs from a cloudstack server.
+
+## Sample output:
+
+```
+CloudStack API Summary for 0Dc-EfRxmi_4YbtK-XZf
+==========================================
+
+List Volumes:              1960    19.91 %
+List Zones:                3221    32.72 %
+List SecurityGroups:       1251    12.71 %
+List Templates:            418      4.25 %
+List Snapshots:            39       0.40 %
+List Disk Offering:        0        0.00 %
+List Virtual Machines:     2955    30.02 %
+List Network Offerings:    0        0.00 %
+List Accounts:             0        0.00 %
+
+
+Total list calls:          9844   100.00 %
+------------------------------------------
+
+Create Volume:             0        0.00 %
+Create Template:           0        0.00 %
+Create Snapshot:           0        0.00 %
+Deploy Virtual Machine:    0        0.00 %
+Start Virtual Machine:     0        0.00 %
+
+
+Total create calls:        0        0.00 %
+------------------------------------------
+
+Destroy Virtual Machine:   0        0.00 %
+Delete Volume:             0        0.00 %
+Delete Template:           0        0.00 %
+
+
+Total delete calls:        0        0.00 %
+==========================================
+
+Total calls:               9844
 ```
